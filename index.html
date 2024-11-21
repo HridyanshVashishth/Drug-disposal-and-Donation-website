@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Medicinal Waste Disposal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section: Plant with medicines -->
+        <div class="left-side">
+            <img src="images/image.jpg" alt="hello_image" class="plant-image">
+        </div>
+
+        <!-- Right Section: Login form -->
+        <div class="right-side">
+            <h2><u>Welcome Back !</u></h2>
+
+            <!-- Login Form -->
+            <form action="donation_service_page.html" method="POST" class="login-form">
+                <label for="username">User ID:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your user ID">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <button type="submit" class="login-btn">Login</button>
+
+            </form>
+
+            <!-- Forgot Password and Register options -->
+            <div class="auth-options">
+                <a href="forgot_password_page.html">Forgot Password?</a>
+                <span>|</span>
+                <a href="registration_page.html">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Medicine List</title>
+    <link rel="stylesheet" href="your_medicine_styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Title Section -->
+            <h2 class="page-title">YOUR MEDICINE LIST</h2>
+            <p class="instruction-text">Please select the medicines you want to donate</p>
+
+            <!-- Medicine Selection Form -->
+            <form action="thank_you_page.html" method="POST" class="medicine-form">
+                <!-- Ointment Section -->
+                <div class="medicine-item">
+                    <label for="ointment">Ointment:</label>
+                    <div class="quantity">
+                        <input type="number" id="ointment" name="ointment" min="0" placeholder="Quantity" required>
+                    </div>
+                </div>
+
+                <!-- Tablets Section -->
+                <div class="medicine-item">
+                    <label for="tablets">Tablets:</label>
+                    <div class="quantity">
+                        <input type="number" id="tablets" name="tablets" min="0" placeholder="Quantity" required>
+                    </div>
+                </div>
+
+                <!-- Syrups Section -->
+                <div class="medicine-item">
+                    <label for="syrups">Syrups:</label>
+                    <div class="quantity">
+                        <input type="number" id="syrups" name="syrups" min="0" placeholder="Quantity" required>
+                    </div>
+                </div>
+
+                <!-- Other Medicines Section -->
+                <div class="medicine-item">
+                    <label for="others">Others:</label>
+                    <div class="quantity">
+                        <input type="number" id="others" name="others" min="0" placeholder="Quantity" required>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-btn">
+                    <button type="submit" class="donate-btn">Select</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
