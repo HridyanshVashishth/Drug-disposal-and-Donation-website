@@ -15,8 +15,9 @@
             
             <!-- Camera Upload Option -->
             <div class="camera-section">
-                <button class="camera-btn" onclick="document.getElementById('medicine-picture').click()">Take/Upload Picture</button>
+                <button class="camera-btn" onclick="document.getElementById('medicine-picture').click()"><img src="" alt=""></button>
                 <input type="file" id="medicine-picture" accept="image/*" style="display:none;" />
+                <button class="open-camera-btn" onclick="openCamera()">Open Camera</button>
             </div>
 
             <!-- Input for Medicine Name and Expiration Date -->
@@ -49,6 +50,21 @@
         <img class="zoomed-image" id="zoomed-image" src="" alt="Zoomed image">
     </div>
 
+    <script>
+        function openCamera() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.capture = 'environment';
+            input.onchange = function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    console.log('Camera image captured:', file.name);
+                }
+            };
+            input.click();
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
